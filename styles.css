@@ -17,18 +17,30 @@ header {
     list-style: none;
     padding-left: 0;
     float: right;
+    margin: 0px;
 }
 .navigation li {
     display: inline-block;
-    padding: 0 15px;
 }
 .logo { 
-    padding: 20px;
+    inline-height:44px;
+    padding-left: 22px;
 }
 .navigation a {
     font-size: 12px;
+    padding: 15px;
+    display: inline-block;
      }
 
+ .navigation a:hover {
+     background-color: rgba(255, 255, 255, 0.2)
+     }
+.navigation a:active {
+     background-color: rgba(255, 255, 255, 0.4)
+     }
+.navigation a:focus {
+     background-color: rgba(255, 255, 255, 0.4)
+     }
 .navigation a, .call-to-action h1 {
     text-transform: uppercase;
     text-decoration: none;
@@ -59,6 +71,29 @@ h2 {
 
 /*add*/
 
+.col-4 {
+    width: 33.33%;
+    float: left;
+    padding: 0 25px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.col-4:hover .icon{
+    background-image: url("img/intro-icons-hover.png")
+}
+.icon {
+    display: inline-block;
+    width:60px;
+    height:60px;
+    background-image: url("img/intro-icons.png")
+}
+
+.psd .icon {
+    background-position: -60px 0;
+}
+.programming .icon {
+    background-position: -120px 0;
+}
 .clearfix::after {
     display: block;
     content: "";
